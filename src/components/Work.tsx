@@ -5,34 +5,39 @@ import { MdArrowBack, MdArrowForward } from "react-icons/md";
 
 const projects = [
   {
-    title: "Solid Starters",
-    category: "Low-Code Platform",
-    tools: "Angular, Next.js, NestJS, MongoDB",
-    image: "/images/Solidx.png",
+    title: "AFTERMATH OF HARSH GUJRAL",
+    category: "Stream Highlight",
+    tools: "Premiere Pro, Color Grading",
+    image: "/images/stream-highlight.jpg",
+    link: "https://drive.google.com/file/d/1AfY5gs9pp1dXKMlF5Pqxt46oMUarOspa/view",
   },
   {
-    title: "Radix",
-    category: "E-Commerce",
-    tools: "Angular, Next.js, NestJS, CMS",
-    image: "/images/radix.png",
+    title: "THE NEW FACE OF INDIAN COMEDY",
+    category: "TALKING HEAD VIDEO",
+    tools: "Transitions, Hooks",
+    image: "/images/indian-comedy.jpg",
+    link: "https://drive.google.com/file/d/1wc8NfHhyFcFiWk9AcfbQgXyH2dEqk8Uz/view",
   },
   {
-    title: "Bond Cancellation",
-    category: "Import-Export Automation",
-    tools: "Angular, Next.js, NestJS, Workflows",
-    image: "/images/bond.png",
+    title: "GOODBYE ANDROID",
+    category: "TECH CONTENT",
+    tools: "DaVinci Resolve, Sound Design",
+    image: "/images/goodbye-android.jpg",
+    link: "https://drive.google.com/file/d/1wc8NfHhyFcFiWk9AcfbQgXyH2dEqk8Uz/view",
   },
   {
-    title: "Sapphire",
-    category: "CRM Platform",
-    tools: "AngularJS, NestJS, PostgreSQL",
-    image: "/images/sapphire.png",
+    title: "MEME REACTION",
+    category: "REACTION",
+    tools: "Visual Branding, Pacing",
+    image: "/images/meme-reaction.jpg",
+    link: "https://drive.google.com/file/d/11_K58fj68VdcrqrWzfr9zAGCAyYzv_Zm/view",
   },
   {
-    title: "Mpro",
-    category: "Insurance Platform",
-    tools: "React.js, Node.js, Microservices",
-    image: "/images/Maxlife.png",
+    title: "SHANTANU HOLMES",
+    category: "SHORT FILM",
+    tools: "Motion Graphics, Cinematic Aesthetics",
+    image: "/images/shantanu-holmes.jpg",
+    link: "https://drive.google.com/file/d/1Lzoihm3MykL-MjpEamU5YeJPXbpWBxMF/view?usp=sharing",
   },
 ];
 
@@ -115,7 +120,13 @@ const Work = () => {
                       </div>
                     </div>
                     <div className="carousel-image-wrapper">
-                      <WorkImage image={project.image} alt={project.title} />
+                      {project.link ? (
+                        <a href={project.link} target="_blank" rel="noreferrer">
+                          <WorkImage image={project.image} alt={project.title} />
+                        </a>
+                      ) : (
+                        <WorkImage image={project.image} alt={project.title} />
+                      )}
                     </div>
                   </div>
                 </div>
