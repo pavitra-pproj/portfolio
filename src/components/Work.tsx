@@ -16,7 +16,7 @@ const projects = [
     category: "TALKING HEAD VIDEO",
     tools: "Transitions, Hooks",
     image: "/images/indian-comedy.jpg",
-    link: "https://drive.google.com/file/d/1wc8NfHhyFcFiWk9AcfbQgXyH2dEqk8Uz/view",
+    link: "https://drive.google.com/file/d/18s-t2dkIHspXl0TZxxLVexxZvpV63wx0/view",
   },
   {
     title: "GOODBYE ANDROID",
@@ -120,13 +120,7 @@ const Work = () => {
                       </div>
                     </div>
                     <div className="carousel-image-wrapper">
-                      {project.link ? (
-                        <a href={project.link} target="_blank" rel="noreferrer">
-                          <WorkImage image={project.image} alt={project.title} />
-                        </a>
-                      ) : (
-                        <WorkImage image={project.image} alt={project.title} />
-                      )}
+                      <WorkImage image={project.image} alt={project.title} link={project.link} />
                     </div>
                   </div>
                 </div>
