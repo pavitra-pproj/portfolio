@@ -37,7 +37,7 @@ const projects = [
     category: "SHORT FILM",
     tools: "Motion Graphics, Cinematic Aesthetics",
     image: "/images/shantanu-holmes.jpg",
-    link: "https://drive.google.com/file/d/1Lzoihm3MykL-MjpEamU5YeJPXbpWBxMF/view?usp=sharing",
+    link: "https://drive.google.com/file/d/1sVDuEFlryaWGOBUydUSaTq92EZLiBWDr/view?usp=sharing",
   },
 ];
 
